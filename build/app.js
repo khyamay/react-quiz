@@ -1,29 +1,29 @@
 /** @jsx React.DOM */
 (function () {
 	'use strict';
-var Quiz = React.createClass({
+var Quiz = React.createClass({displayName: 'Quiz',
 			propTypes: {
 				book: React.PropTypes.array.isRequired
 			},
             render: function() {
-                return <div> {
+                return React.DOM.div(null, " ", 
                     this.props.books.map(function(b) {
-                            return <Book title = {b} />;	
-						})}
-						</div>
+                            return Book({title: b});	
+						})
+						)
                         }
                     });
 
-                var Book = React.createClass({
+                var Book = React.createClass({displayName: 'Book',
                 	propTypes: {
                 		title: React.PropTypes.string.isRequired
                 	},
                     render: function() {
-                        return <div> <h4> {this.props.title} </h4></div>;
+                        return React.DOM.div(null, " ", React.DOM.h4(null, " ", this.props.title, " "));
                     }
 
                 });
 
-	React.renderComponent(<Quiz books={['Lord of the Rings', 'This is Cool']}/>, document.body);
+	React.renderComponent(Quiz({books: ['Lord of the Rings', 'This is Cool']}), document.body);
 
 })();
