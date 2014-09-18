@@ -1,0 +1,70 @@
+/**
+ * Sticky footer
+ */
+html,
+body {
+  height: 100%;                 /* No padding or margin allowed on the root elements */
+}
+
+#wrapper {                      /* Wrap page content to push footer down */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px;        /* Negative indent footer by its height */
+  padding: 0 0 100px;           /* Pad bottom by footer height */
+}
+
+/**
+ * General styles
+ */
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.jumbotron {
+  background-color: #ccc;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  color: #fafafa;
+  height: 100px;                /* Fixed height per the wrapper's negative margin */
+  margin-top: 60px;
+  padding-top: 45px;
+}
+
+.authorImage {
+  width: 360px;
+}
+
+.title {
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+.pass {
+  background-color: #5cb85c;
+
+}
+
+.fail {
+  background-color: red;
+
+}
+
+.formHeader {
+  margin-bottom: 25px;
+
+}

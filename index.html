@@ -3,14 +3,32 @@
 
 <head>
     <title>React Quiz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="wrapper">
+    <div class="jumbotron">
+    	<div class="container">
+    		<h1>Author Quiz</h1>
+    		<p>Select the book written by author shown</p>
+    	</div>
+    </div>
+    <div class="container">
+    	<div id="app"></div>
+    </div>
+    </div>
+    <div id="footer">
+    	<div class="container">
+    		<p class="text-muted credit">All images are from <a href="http://commons.wikimedia.org/wiki/Main_page">Wikimedia Commons</a> and are in the public domain</p>
+    	</div>
+    </div>
+    
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script  src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.1/react.min.js"></script>
 	<script type="text/javascript" src="build/app.js"></script>
