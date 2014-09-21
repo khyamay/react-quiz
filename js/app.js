@@ -77,7 +77,7 @@ var Quiz = React.createClass({
                         return (<div className="row">
                             <div className="col-md-12">
                                 <h1>Add Game</h1>
-                                <form role="form" onSubmit={this.hadleSubmit}>
+                                <form role="form" onSubmit={this.handleSubmit}>
                                     <div className="form-group">
                                         <input ref="imageUrl" type="text" className="form-control" placeholder="Image Url" />
                                     </div><div className="form-group">
